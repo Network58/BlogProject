@@ -1,0 +1,42 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@editorjs/checklist": "^1.1.0",
+        "@editorjs/link": "^2.2.1",
+        "@editorjs/quote": "^2.3.0",
+        "@editorjs/warning": "^1.1.1",
+        "axios": "^0.19",
+        "cross-env": "^7.0",
+        "laravel-mix": "^5.0.5",
+        "lodash": "^4.17.19",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.15.2",
+        "sass-loader": "^8.0.0",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "@editorjs/code": "^2.5.0",
+        "@editorjs/delimiter": "^1.1.0",
+        "@editorjs/embed": "^2.3.1",
+        "@editorjs/header": "^2.5.0",
+        "@editorjs/image": "^2.5.0",
+        "@editorjs/list": "^1.5.0",
+        "@editorjs/paragraph": "^2.7.0",
+        "@editorjs/table": "^1.2.2",
+        "ckeditor4-vue": "^1.1.0",
+        "view-design": "^4.3.2",
+        "vue": "^2.6.11",
+        "vue-editor-js": "^1.1.1",
+        "vue-router": "^3.4.3",
+        "vuex": "^3.5.1"
+    }
+}
